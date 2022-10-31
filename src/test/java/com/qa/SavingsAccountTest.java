@@ -31,6 +31,6 @@ public class SavingsAccountTest {
         savingsAccountUser.applyInterest();
 
         //Assert
-        assertEquals(expected_answer, savingsAccountUser.getBalance());
+        assertEquals(expected_answer, savingsAccountUser.getBalance(),0.01);
     }
 }
