@@ -18,18 +18,18 @@ public class SavingsAccountTest {
         //Assert
         assertEquals(expected_answer, savingsAccountUser.getBalance());
     }
-//    @Test
-//
-//    public void test_apply_interest_to_savings_account(){
-//        //Arrange
-//        SavingsAccount savingsAccountUser = new SavingsAccount();
-//        savingsAccountUser.setBalance(100.00);
-//
-//        double expected_answer = 100.50;
-//        //Act
-//        savingsAccountUser.applyInterest();
-//
-//        //Assert
-//        assertEquals(expected_answer, savingsAccountUser.getBalance());
-//    }
+    @Test
+
+    public void test_apply_interest_to_savings_account(){
+        //Arrange
+        SavingsAccount savingsAccountUser = new SavingsAccount();
+        savingsAccountUser.setBalance(100.00);
+
+        double expected_answer = 100.50;
+        //Act
+        savingsAccountUser.applyInterest();
+
+        //Assert
+        assertEquals(expected_answer, savingsAccountUser.getBalance(),0.01);
+    }
 }
