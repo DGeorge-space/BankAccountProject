@@ -26,6 +26,7 @@ public class SavingsAccountTest {
         savingsAccountUser.setBalance(100.00);
 
         double expected_answer = 100.50;
+
         //Act
         savingsAccountUser.applyInterest();
 
