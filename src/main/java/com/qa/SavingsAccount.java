@@ -39,6 +39,7 @@ public class SavingsAccount extends BankAccount{
         double solution = getBalance()*(1.0+interestRate);
         setBalance(Double.parseDouble(dfZero.format(solution)));
 
+        
         //}
     }
 
