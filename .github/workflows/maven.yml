@@ -38,13 +38,13 @@ jobs:
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
-        path: /home/runner/work/BankAccount/BankAccount/target/*.jar
+        path: /home/runner/work/BankAccountProject/BankAccountProject/target/*.jar
 
     - name: Archive test results
       uses: actions/upload-artifact@v3
       with:
         name: tests
-        path: /home/runner/work/BankAccount/BankAccount/target/surefire-reports/*.txt
+        path: /home/runner/work/BankAccountProject/BankAccountProject/target/surefire-reports/*.txt
       
   test:
     runs-on: ubuntu-latest
