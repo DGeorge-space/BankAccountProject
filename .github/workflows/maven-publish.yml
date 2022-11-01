@@ -4,8 +4,7 @@
 name: Hello World
 
 on:
-  release:
-    types: [created]
+  [push]
 
 jobs:
   build:
