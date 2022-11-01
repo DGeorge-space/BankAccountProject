@@ -11,12 +11,10 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/DGeorge-space/BankAccountProject.git'
-
             }
         }
         stage('Compile'){
             steps{
-
                 sh "mvn compile"
             }
         }
@@ -27,7 +25,6 @@ pipeline {
         }
         stage('complete'){
             steps{
-
                 sh "echo Finished"
             }
         }
