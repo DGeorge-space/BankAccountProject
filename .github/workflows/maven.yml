@@ -35,6 +35,17 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
   
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        path: /home/runner/work/BankingTests/BankingTests/target/*.jar
+
+    - name: Archive test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: tests
+        path: /home/runner/work/BankingTests/BankingTests/target/surefire-reports/*.txt
+      
   test:
     runs-on: ubuntu-latest
     steps:
